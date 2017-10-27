@@ -42,5 +42,10 @@
   },
   "dependencies": {
     "ember-cli-fastboot": "^1.1.0"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/post-middleware"
+    ]
   }
 }
