@@ -1,0 +1,11 @@
+{
+  "name": "body-parser-middleware",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "before": [
+      "ember-cli-fastboot"
+    ]
+  }
+}
