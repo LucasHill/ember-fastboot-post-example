@@ -14,7 +14,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "start-production": "ember build && node server.js"
+    "example-server": "ember build && node example-server.js"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

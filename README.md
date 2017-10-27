@@ -1,7 +1,22 @@
 # ember-fastboot-post-example
+This is a simple demo of how one would enable POST requests in a fastboot application. Examples are provided for both in development (ember serve) and using the production ready fastboot-app-server. The commits should provide a good story of the work needed to enable this in your own app.
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+To POST to this app, try this example cURL:
+```
+curl -X POST \
+  http://localhost:4200/ \
+  -H 'accept: text/html' \
+  -H 'content-type: application/json' \
+  -d '{
+	"message": "This was in the POST request!!"
+}'
+```
+
+To run the example 'production' server run:
+```
+npm run example-server
+```
+
 
 ## Prerequisites
 
