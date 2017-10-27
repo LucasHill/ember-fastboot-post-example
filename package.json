@@ -13,7 +13,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "start-production": "ember build && node server.js"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -42,7 +43,8 @@
   },
   "dependencies": {
     "body-parser": "^1.18.2",
-    "ember-cli-fastboot": "^1.1.0"
+    "ember-cli-fastboot": "^1.1.0",
+    "fastboot-app-server": "^1.1.0"
   },
   "ember-addon": {
     "paths": [
