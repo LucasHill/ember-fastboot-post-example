@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<h1>Greetings!</h1>
+{{#if isPost}}
+  <p> This request was made with a post! </p>
+  <p> Post message: {{postMessage}} </p>
+{{else}}
+  <p> This request was made with a get! </p>
+{{/if}}
+

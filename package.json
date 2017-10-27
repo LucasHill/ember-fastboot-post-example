@@ -13,7 +13,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "start-production": "ember build && node server.js"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -35,10 +36,20 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.16.0",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ember-cli-fastboot": "^1.1.0",
+    "fastboot-app-server": "^1.1.0"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/body-parser-middleware",
+      "lib/post-middleware"
+    ]
   }
 }
